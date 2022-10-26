@@ -24,9 +24,13 @@ function display(event){
 }
 
 function displayDecimal(){
+    if(total == ''){
+        total += "0."
+    }
     if(!total.includes('.')){
         total += '.'
     }
+    
     document.getElementById('result').innerText = total
 }
 
@@ -58,10 +62,10 @@ function handleOperationClick(event){
         return
     } 
     //currentNum = document.getElementById('result').innerText
-    numInMemory = result(operator)
+    numInMemory = getResult(operator)
 }
 
-function result(operator){
+function getResult(operator){
     let currentNum = document.getElementById('result').innerText
     if(operator === 'add'){
         total = parseFloat(currentNum) + parseFloat(numInMemory)
@@ -86,6 +90,8 @@ function result(operator){
 }
 
 function displayResult(){
+    getResult(operator)
     document.getElementById('result').innerText =total
     numInMemory = null
+    total = ''
 }

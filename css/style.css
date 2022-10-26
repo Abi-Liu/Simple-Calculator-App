@@ -83,3 +83,14 @@ div{
  #equal:hover{
     background-color: rgba(223,166,37,0.58);
 }
+
+#decimal{
+    border-radius: 70px;
+    width: 80px;
+    height: 80px;
+    background: #3a3b3c ;
+ }
+
+ #decimal:hover{
+    background-color: #555555;
+}
