@@ -41,7 +41,7 @@ function switchSign(){
 
 function percent(){
     total /= 100
-    document.getElementById('result').innerText = total
+    document.getElementById('result').innerText = total.toString()
 }
 
 function clear(){
@@ -93,5 +93,5 @@ function displayResult(){
     getResult(operator)
     document.getElementById('result').innerText =total
     numInMemory = null
-    total = ''
+  
 }
