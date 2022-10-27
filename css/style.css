@@ -4,12 +4,12 @@ body{
     background-color: black;
     color: white;
     margin-left: auto;
-    width: 50%;
-    height: 80%;
+    width: 25%;
+    height: 85%;
     font-size: 2rem;
     bottom: 0;
     right: 0;
-    margin-right: 25%;
+    margin-right: 37%;
 }
 div{
     display: flex;
@@ -82,4 +82,35 @@ div{
 
  #equal:hover{
     background-color: rgba(223,166,37,0.58);
+}
+
+#decimal{
+    border-radius: 70px;
+    width: 80px;
+    height: 80px;
+    background: #3a3b3c ;
+ }
+
+ #decimal:hover{
+    background-color: #555555;
+}
+
+ /* create media queries to make the site responsive. First one at less than 1275px */
+
+@media only screen and (max-width: 1280px) {
+    body{
+        width: 29%
+    }
+}
+@media only screen and (max-width: 1105px) {
+    body{
+        width: 35%
+    }
+}
+
+@media only screen and (max-width: 925) {
+    body{
+        width: 60%;
+        margin: auto;
+    }
 }
